@@ -1,0 +1,21 @@
+{
+  "name": "netlify-functions-typescript-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Anand Kashyap <anandkashyap60@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "netlify-lambda build src",
+    "serve": "netlify-lambda serve src",
+    "ts-check": "tsc --noEmit --lib ES2015 ./src/*.ts"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/aws-lambda": "^8.10.73",
+    "netlify-lambda": "^2.0.3",
+    "typescript": "^4.2.3"
+  }
+}
